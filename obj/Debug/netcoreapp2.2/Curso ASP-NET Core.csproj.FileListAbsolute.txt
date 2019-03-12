@@ -30,3 +30,4 @@ C:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Index.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Simple.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Index.g.cshtml.cs
