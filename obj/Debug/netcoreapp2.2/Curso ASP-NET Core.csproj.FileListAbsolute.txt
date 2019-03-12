@@ -14,7 +14,6 @@ c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.TagHelpers.input.cache
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.TagHelpers.output.cache
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorCoreGenerate.cache
-c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -28,3 +27,5 @@ c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.dll
 c:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.pdb
 C:\Users\PETRO133\Dropbox\Programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.csproj.CopyComplete
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Index.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
