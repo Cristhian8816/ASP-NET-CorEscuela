@@ -61,7 +61,7 @@ namespace Curso_ASP_NET_Core.Models
         private List<Alumno> GenerarAlumnosAlAzar()
         {
             string[] nombre1 = {"Cristhian","Julian","Fabio","Andres","Javier","Carlos","Camilo"};
-            string[] Apellido1 = {"Gomez","Prada","Lizcanoe","Ortiz","Silva","Toledo","Herrera"};
+            string[] Apellido1 = {"Gomez","Prada","Lizcano","Ortiz","Silva","Toledo","Herrera"};
             string[] nombre2 = {"Julian","Jose","Juan","Osvaldo","Andres","Diomedes","Nicomedes","Teodoro"};
 
             var listaAlumnos =  from n1 in nombre1 //Esto es un producto cartesiano de los tres arreglos creados

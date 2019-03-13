@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using Curso_ASP_NET_Core.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,42 +10,21 @@ namespace Curso_ASP_NET_Core.Controllers
     {
         public IActionResult Index()
         {
-            return View(new Asignatura { 
-                                Nombre = "Programacion",
-                                Id = Guid.NewGuid().ToString()
-                               }
-                        );
+            var asignatura = _context.Asignaturas.FirstOrDefault();
+            return View(asignatura);
         }
         public IActionResult MultiAsignatura()
-        {
-            var listaAsignaturas = new List<Asignatura>()
-            {
-                new Asignatura { 
-                                 Nombre = "Matematicas",
-                                 Id = Guid.NewGuid().ToString()
-                               },
-                new Asignatura {
-                                 Nombre = "Educacion Fisica",
-                                 Id = Guid.NewGuid().ToString()
-                               },
-                new Asignatura { 
-                                 Nombre = "Castellano",
-                                 Id = Guid.NewGuid().ToString()
-                               },
-                new Asignatura { 
-                                 Nombre = "Ciencias Naturales",
-                                 Id = Guid.NewGuid().ToString()
-                               },
-                new Asignatura { 
-                                 Nombre = "Programacion",
-                                 Id = Guid.NewGuid().ToString()
-                               },
-            };        
-
+        {                  
+            var asignaturas = _context.Asignaturas;
             ViewBag.CosaDinamica = "Cristhian is the best";
             ViewBag.Fecha = DateTime.Now;
 
-            return View("MultiAsignatura",listaAsignaturas);
+            return View("MultiAsignatura",asignaturas);
+        }
+        private EscuelaContext _context;
+        public AsignaturaController(EscuelaContext context)
+        {
+            _context = context;
         }
     }
 }

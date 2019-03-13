@@ -6,8 +6,7 @@ using System.Linq;
 namespace Curso_ASP_NET_Core.Controllers
 {
     public class EscuelaController : Controller
-    {
-        private EscuelaContext _context;
+    {        
         public IActionResult Index()
         {       
             ViewBag.CosaDinamica = "Cristhian is the best";
@@ -16,6 +15,7 @@ namespace Curso_ASP_NET_Core.Controllers
             return View(escuela);
         }
 
+        private EscuelaContext _context;
         public EscuelaController(EscuelaContext context)
         {
             _context = context;
