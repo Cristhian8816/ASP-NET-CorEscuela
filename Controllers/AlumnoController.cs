@@ -12,7 +12,7 @@ namespace Curso_ASP_NET_Core.Controllers
         {
             return View(new Alumno { 
                                 Nombre = "Cristhian Gómez",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                                }
                         );
         }
@@ -36,10 +36,10 @@ namespace Curso_ASP_NET_Core.Controllers
                                 from a1 in Apellido1
                                 select new Alumno{ 
                                                     Nombre = $"{n1} {n2} {a1}",
-                                                    UniqueId = Guid.NewGuid().ToString() 
+                                                    Id = Guid.NewGuid().ToString() 
                                                  };
                                             
-            return listaAlumnos.OrderBy( (al) => al.UniqueId ).ToList();            
+            return listaAlumnos.OrderBy( (al) => al.Id ).ToList();            
         }
     }
 }

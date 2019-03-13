@@ -11,7 +11,7 @@ namespace Curso_ASP_NET_Core.Controllers
         {
             return View(new Asignatura { 
                                 Nombre = "Programacion",
-                                UniqueId = Guid.NewGuid().ToString()
+                                Id = Guid.NewGuid().ToString()
                                }
                         );
         }
@@ -21,23 +21,23 @@ namespace Curso_ASP_NET_Core.Controllers
             {
                 new Asignatura { 
                                  Nombre = "Matematicas",
-                                 UniqueId = Guid.NewGuid().ToString()
+                                 Id = Guid.NewGuid().ToString()
                                },
                 new Asignatura {
                                  Nombre = "Educacion Fisica",
-                                 UniqueId = Guid.NewGuid().ToString()
+                                 Id = Guid.NewGuid().ToString()
                                },
                 new Asignatura { 
                                  Nombre = "Castellano",
-                                 UniqueId = Guid.NewGuid().ToString()
+                                 Id = Guid.NewGuid().ToString()
                                },
                 new Asignatura { 
                                  Nombre = "Ciencias Naturales",
-                                 UniqueId = Guid.NewGuid().ToString()
+                                 Id = Guid.NewGuid().ToString()
                                },
                 new Asignatura { 
                                  Nombre = "Programacion",
-                                 UniqueId = Guid.NewGuid().ToString()
+                                 Id = Guid.NewGuid().ToString()
                                },
             };        
 

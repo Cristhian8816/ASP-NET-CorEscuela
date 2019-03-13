@@ -12069,7 +12069,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 2.2.3",
-      "Microsoft.EntityFrameworkCore.SqlServer",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.3",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -12129,7 +12129,7 @@
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[2.2.3, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
