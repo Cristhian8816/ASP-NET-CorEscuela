@@ -17,9 +17,7 @@ namespace Curso_ASP_NET_Core.Models
 
         public Escuela(string nombre, int año) => (Nombre, añoFundacion) = (nombre, año);
 
-        public Escuela(string nombre, int año, 
-                       TiposEscuela tipo, 
-                       string pais = "", string ciudad = "") : base()
+        public Escuela(string nombre, int año, TiposEscuela tipo, string pais = "", string ciudad = "") : base()
         {
             (Nombre, añoFundacion) = (nombre, año);
             Pais = pais;
