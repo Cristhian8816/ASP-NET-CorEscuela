@@ -1,0 +1,15 @@
+﻿
+@model Curso
+
+@{
+    ViewData["Title"] = "Informacion Cursos";
+    Layout = "Simple";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<strong>@ViewBag.MensajeExtra</strong>
+<partial name= "ObjetoEscuelaSimple"/>
+
+<p>@ViewBag.CosaDinamica</p>
+<p>@ViewBag.Fecha</p>
