@@ -39,3 +39,8 @@ c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Index.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\MultiCurso.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Create.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Update.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Create.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Update.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Create.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Update.g.cshtml.cs

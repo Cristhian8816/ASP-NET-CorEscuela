@@ -8,13 +8,7 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<strong>Desde la vista normal</strong>
-<p>
-    Nombre: @Model.Nombre <br/>
-    ID: @Model.Id 
-</p>
-
-<strong>Desde la vista Parcial</strong>
+<strong>@ViewBag.MensajeExtra</strong>
 <partial name= "ObjetoEscuelaSimple"/>
 
 <p>@ViewBag.CosaDinamica</p>
