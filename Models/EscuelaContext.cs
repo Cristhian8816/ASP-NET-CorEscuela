@@ -39,7 +39,7 @@ namespace Curso_ASP_NET_Core.Models
             var asignaturas = CargarAsignaturas(cursos);
 
             //X Cada curso cargar alumnos
-            var alumnos = CargarAlumnos(cursos); 
+            var alumnos = CargarAlumnos(cursos);             
 
             //llenamos nuestra DB inMemory
             modelBuilder.Entity<Escuela>().HasData(escuela); 
@@ -49,23 +49,52 @@ namespace Curso_ASP_NET_Core.Models
            
         }
 
-        private static  List<Curso> CargarCursos(Escuela escuela)
+        private static List<Curso> CargarCursos(Escuela escuela)
         {
             var escCursos = new List<Curso>()
             {
              new Curso()
-             {Id = Guid.NewGuid().ToString(), EscuelaId = escuela.Id, Nombre = "101", Jornada = TiposJornada.Mañana},
+             {
+                Id = Guid.NewGuid().ToString(),
+                EscuelaId = escuela.Id,
+                Nombre = "101",
+                Jornada = TiposJornada.Mañana,
+                Dirección = "Calle 142 # 13-69"
+             },
              new Curso()
-             {Id = Guid.NewGuid().ToString(), EscuelaId = escuela.Id, Nombre = "201", Jornada = TiposJornada.Mañana},
+             {
+                 Id = Guid.NewGuid().ToString(),
+                  EscuelaId = escuela.Id,
+                  Nombre = "201",
+                  Jornada = TiposJornada.Mañana,
+                  Dirección = "Calle 142 # 13-69"
+             },
              new Curso()
-             {Id = Guid.NewGuid().ToString(), EscuelaId = escuela.Id, Nombre = "301", Jornada = TiposJornada.Mañana},
+             {
+                 Id = Guid.NewGuid().ToString(),
+                 EscuelaId = escuela.Id,
+                 Nombre = "301",
+                 Jornada = TiposJornada.Mañana,
+                 Dirección = "Calle 142 # 13-69"
+             },
              new Curso()
-             {Id = Guid.NewGuid().ToString(), EscuelaId = escuela.Id, Nombre = "401", Jornada = TiposJornada.Tarde},
+             {
+                 Id = Guid.NewGuid().ToString(),
+                 EscuelaId = escuela.Id,
+                 Nombre = "401",
+                 Jornada = TiposJornada.Tarde,
+                 Dirección = "Calle 142 # 13-69"
+             },
              new Curso()
-             {Id = Guid.NewGuid().ToString(), EscuelaId = escuela.Id, Nombre = "501", Jornada = TiposJornada.Tarde},
+             {
+                 Id = Guid.NewGuid().ToString(),
+                 EscuelaId = escuela.Id,
+                 Nombre = "501",
+                 Jornada = TiposJornada.Tarde,
+                 Dirección = "Calle 142 # 13-69"
+                 },
             };
-
-            return(escCursos);
+            return (escCursos);
         }
 
         private static List<Asignatura> CargarAsignaturas(List<Curso> cursos)

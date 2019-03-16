@@ -106,6 +106,7 @@ namespace Curso_ASP_NET_Core.Controllers
                 // updating fields
                 alumnoSelect.Nombre = alumnoForm.Nombre;
                 alumnoSelect.Curso = alumnoForm.Curso;
+                alumnoSelect.Email = alumnoForm.Email;
 
                 // saving updated data
                 _context.SaveChanges();
