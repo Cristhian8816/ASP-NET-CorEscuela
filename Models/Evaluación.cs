@@ -10,9 +10,9 @@ namespace Curso_ASP_NET_Core.Models
         public Asignatura Asignatura  { get; set; }      
         public float Nota { get; set; }
 
-        public override string ToString()
+        /*public override string ToString()
         {
             return $"{Nota}, {Alumno.Nombre}, {Asignatura.Nombre}";
-        }
+        } */
     }
 }

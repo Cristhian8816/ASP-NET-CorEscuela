@@ -36,11 +36,11 @@ namespace Curso_ASP_NET_Core
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
             //Configuracion del tipo de motor de bases de datos a manejar
-            //services.AddDbContext<EscuelaContext>(options => options.UseInMemoryDatabase(databaseName: "TestDB"));
+            services.AddDbContext<EscuelaContext>(options => options.UseInMemoryDatabase(databaseName: "TestDB"));
 
             //Configuracion de la DB SQL
             string connString = ConfigurationExtensions.GetConnectionString(this.Configuration, "DefaultConnectionString");
-            services.AddDbContext<EscuelaContext>(options => options.UseSqlServer(connString));
+            //services.AddDbContext<EscuelaContext>(options => options.UseSqlServer(connString));
         
         }
 

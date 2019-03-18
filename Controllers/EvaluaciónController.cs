@@ -48,8 +48,8 @@ namespace Curso_ASP_NET_Core.Controllers
         // GET: Evaluación/Create
         public IActionResult Create()
         {
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id");
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id");
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre");
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace Curso_ASP_NET_Core.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluación.AsignaturaId);
             return View(evaluación);
         }
 
@@ -84,8 +84,8 @@ namespace Curso_ASP_NET_Core.Controllers
             {
                 return NotFound();
             }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluación.AsignaturaId);
             return View(evaluación);
         }
 
@@ -121,8 +121,8 @@ namespace Curso_ASP_NET_Core.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
-            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Nombre", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Nombre", evaluación.AsignaturaId);
             return View(evaluación);
         }
 

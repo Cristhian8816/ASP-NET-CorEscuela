@@ -47,7 +47,7 @@ namespace Curso_ASP_NET_Core.Controllers
         // GET: Asignatura/Create
         public IActionResult Create()
         {
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id");
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace Curso_ASP_NET_Core.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
@@ -81,7 +81,7 @@ namespace Curso_ASP_NET_Core.Controllers
             {
                 return NotFound();
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
@@ -117,7 +117,7 @@ namespace Curso_ASP_NET_Core.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
+            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Nombre", asignatura.CursoId);
             return View(asignatura);
         }
 
