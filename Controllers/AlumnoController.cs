@@ -1,128 +1,152 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Curso_ASP_NET_Core.Models;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Curso_ASP_NET_Core.Models;
 
 namespace Curso_ASP_NET_Core.Controllers
 {
     public class AlumnoController : Controller
     {
-        [Route("Alumno/Index")]
-        [Route("Alumno/Index/{alumnoId}")]
-        public IActionResult Index(string alumnoId)
-        {
-            if (string.IsNullOrWhiteSpace(alumnoId))
-            {
-                return View("MultiAlumno", _context.Alumnos);
-            }
-            else
-            {
-                var alumno = from alumn in _context.Alumnos
-                             where alumn.Id == alumnoId
-                             select alumn;
+        private readonly EscuelaContext _context;
 
-                return View(alumno.SingleOrDefault());
-            }
-        }
-        public IActionResult MultiAlumno()
-        {
-            ViewBag.CosaDinamica = "Cristhian is the best";
-            ViewBag.Fecha = DateTime.Now;
-
-            var alumnos = _context.Alumnos;
-            return View("MultiAlumno", alumnos);
-        }
-
-        public IActionResult Create()
-        {
-            ViewBag.Fecha = DateTime.Now;
-
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Create(Alumno alumno)
-        {
-            ViewBag.Fecha = DateTime.Now;
-
-            if (ModelState.IsValid)
-            {
-                var curso = _context.Cursos.FirstOrDefault();
-
-                alumno.CursoId = curso.Id;                
-                _context.Alumnos.Add(alumno);
-                _context.SaveChanges();
-                ViewBag.MensajeExtra = "Alumno Creado";
-
-                return View("Index", alumno);
-            }
-            else
-            {
-                return View(alumno);
-            }
-        }
-
-        [Route("Alumno/Update")]
-        [Route("Alumno/Update/{alumnoId}")]
-        public IActionResult Update(string alumnoId)
-        {
-            var alumnoSelect = from alumno in _context.Alumnos
-                                   where alumno.Id == alumnoId
-                                   select alumno;
-
-            // validation: alumnoId is available
-            if (string.IsNullOrWhiteSpace(alumnoId))
-            {
-                return MultiAlumno();
-            }
-            else
-            {
-                return View(alumnoSelect.SingleOrDefault());//tengo dudas
-            }
-        }
-
-        [Route("Alumno/Update/{alumnoId}")]
-        [HttpPost]
-        public IActionResult Update(string alumnoId, Alumno alumnoForm)
-        {
-            var alumno = _context.Alumnos.Find(alumnoId);//tengo dudas
-
-            // validating all required data
-            if (!ModelState.IsValid)
-            {
-                return View("Update", alumno);
-            }
-            // search and extract the asignature to be updated from db
-            var alumnoSelect = _context.Alumnos.SingleOrDefault(c => c.Id == alumnoId);//tengo dudas
-
-            // in case curso does not exist
-            if (alumnoSelect == null)
-            {
-                return MultiAlumno();
-            }
-            else
-            {
-                // updating fields
-                alumnoSelect.Nombre = alumnoForm.Nombre;
-                alumnoSelect.Curso = alumnoForm.Curso;
-                alumnoSelect.Email = alumnoForm.Email;
-
-                // saving updated data
-                _context.SaveChanges();
-
-                ViewBag.MensajeExtra = "Alumno Actualizado con éxito!";
-
-                // return to individual view(Note: Not method Index,
-                // Index view instead)
-                // add the course searched
-                return View("Index", alumno);
-            }
-        }
-        private EscuelaContext _context;
         public AlumnoController(EscuelaContext context)
         {
             _context = context;
+        }
+
+        // GET: Alumno
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Alumnos.ToListAsync());
+        }
+
+        // GET: Alumno/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var alumno = await _context.Alumnos
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (alumno == null)
+            {
+                return NotFound();
+            }
+
+            return View(alumno);
+        }
+
+        // GET: Alumno/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Alumno/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Nombre,Id,CursoId")] Alumno alumno)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(alumno);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(alumno);
+        }
+
+        // GET: Alumno/Edit/5
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var alumno = await _context.Alumnos.FindAsync(id);
+            if (alumno == null)
+            {
+                return NotFound();
+            }
+            return View(alumno);
+        }
+
+        // POST: Alumno/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("Nombre,Id,CursoId")] Alumno alumno)
+        {
+            if (id != alumno.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(alumno);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AlumnoExists(alumno.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(alumno);
+        }
+
+        // GET: Alumno/Delete/5
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var alumno = await _context.Alumnos
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (alumno == null)
+            {
+                return NotFound();
+            }
+
+            return View(alumno);
+        }
+
+        // POST: Alumno/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var alumno = await _context.Alumnos.FindAsync(id);
+            _context.Alumnos.Remove(alumno);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool AlumnoExists(string id)
+        {
+            return _context.Alumnos.Any(e => e.Id == id);
         }
     }
 }

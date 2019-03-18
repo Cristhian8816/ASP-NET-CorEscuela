@@ -14,12 +14,12 @@ namespace Curso_ASP_NET_Core.Models
 
         public string CursoId {get; set; }
 
-        [Display(Prompt="Curso alumno", Name="Curso")]        
+        /* [Display(Prompt="Curso alumno", Name="Curso")]        
         [MaxLength(3, ErrorMessage = "Curso Invalido")]
         public  Curso Curso {get; set; }
         [Display(Prompt="Email alumno", Name="Email")]        
         [DataType(DataType.EmailAddress)] 
         [EmailAddress]
-        public string Email {get; set; }        
+        public string Email {get; set; }  */      
     }
 }

@@ -1,27 +1,37 @@
-﻿
-@model Alumno
+@model Curso_ASP_NET_Core.Models.Alumno
 
 @{
-    ViewData["Title"] = "Creacion de un Alumno";
-    Layout = "Simple";
+    ViewData["Title"] = "Create";
 }
 
-<h1>@ViewData["Title"]</h1>
-<div asp-validation-summary="All"></div>
-<form method = "POST">
-    <div>
-       <label asp-for="Nombre"></label> 
-       <input asp-for="Nombre"/> 
-    </div>  
-    <div>
-       <label asp-for="Curso"></label> 
-       <input asp-for="Curso"/> 
-    </div> 
-    <div>
-       <label asp-for="Email"></label> 
-       <input asp-for="Email"/> 
-    </div> 
-   <input type="submit" />
-</form>
+<h1>Create</h1>
 
-<p>@ViewBag.Fecha</p>
+<h4>Alumno</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CursoId" class="control-label"></label>
+                <select asp-for="CursoId" class ="form-control" asp-items="ViewBag.CursoId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

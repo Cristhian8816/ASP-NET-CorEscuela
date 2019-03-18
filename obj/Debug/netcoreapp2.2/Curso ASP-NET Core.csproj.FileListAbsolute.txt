@@ -92,3 +92,21 @@ C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netc
 C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.dll
 C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.pdb
 C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.csproj.CopyComplete
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Delete.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Details.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Edit.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Delete.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Details.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Edit.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Create.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Delete.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Details.g.cshtml.cs
+C:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Edit.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Delete.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Details.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Edit.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Evaluación\Create.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Evaluación\Delete.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Evaluación\Details.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Evaluación\Edit.g.cshtml.cs
+c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Evaluación\Index.g.cshtml.cs
