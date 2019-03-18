@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Curso_ASP_NET_Core.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Curso_ASP_NET_Core.Models;
 
 namespace Curso_ASP_NET_Core
 {
@@ -36,7 +36,12 @@ namespace Curso_ASP_NET_Core
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
             //Configuracion del tipo de motor de bases de datos a manejar
-            services.AddDbContext<EscuelaContext>(options => options.UseInMemoryDatabase(databaseName: "TestDB")            );
+            //services.AddDbContext<EscuelaContext>(options => options.seInMemoryDatabase(databaseName: "TestDB"));
+
+            //Configuracion de la DB SQL
+            string connString = ConfigurationExtensions.GetConnectionString(this.Configuration, "DefaultConnectionString");
+            services.AddDbContext<EscuelaContext>(options => options.UseSqlServer(connString));
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

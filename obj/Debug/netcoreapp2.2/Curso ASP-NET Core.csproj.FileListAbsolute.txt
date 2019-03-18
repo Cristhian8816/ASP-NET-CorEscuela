@@ -45,3 +45,50 @@ c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Create.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Update.g.cshtml.cs
 c:\Users\PETRO133\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ListaObjetoAlumno.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.deps.json
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.runtimeconfig.json
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.runtimeconfig.dev.json
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.dll
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.pdb
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.Views.dll
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\bin\Debug\netcoreapp2.2\Curso ASP-NET Core.Views.pdb
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.csprojAssemblyReference.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.csproj.CoreCompileInputs.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorAssemblyInfo.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorAssemblyInfo.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.AssemblyInfoInputs.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.AssemblyInfo.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.TagHelpers.input.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.TagHelpers.output.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorCoreGenerate.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Create.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Index.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\MultiAlumno.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Alumno\Update.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Create.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Index.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\MultiAsignatura.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Asignatura\Update.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Create.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Index.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\MultiCurso.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Curso\Update.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Escuela\Index.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ListaObjetoAlumno.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ListaObjetosEscuela.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ObjetoEscuelaSimple.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Simple.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorTargetAssemblyInfo.cache
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.RazorTargetAssemblyInfo.cs
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.Views.pdb
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.dll
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.pdb
+C:\Users\Doc Alma Lizcano\dropbox\programacion\Curso ASP-NET Core\obj\Debug\netcoreapp2.2\Curso ASP-NET Core.csproj.CopyComplete

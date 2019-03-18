@@ -10,7 +10,7 @@ namespace Curso_ASP_NET_Core.Controllers
         public IActionResult Index()
         {       
             ViewBag.CosaDinamica = "Cristhian is the best";
-
+            
             var escuela = _context.Escuelas.FirstOrDefault();
             return View(escuela);
         }
