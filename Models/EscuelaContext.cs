@@ -130,7 +130,7 @@ namespace platzi_asp_net_core.Models
         {
             string[] nombre1 = { "Cristhian", "Juan", "Carlos", "Fabio", "Javier", "Jose", "Sergio"};
             string[] apellido1 = {"Gomez", "Silva", "Ortiz", "Lizcano", "Prada", "Gutierrez" };
-            string[] nombre2 = { "Julian", "Andres", "Jose", "Andres", "Osvaldo", "Luis"};
+            string[] nombre2 = { "Julian", "Andres", "José", "Andres", "Osvaldo", "Luis"};
 
             var listaAlumnos = from n1 in nombre1
                                from n2 in nombre2
